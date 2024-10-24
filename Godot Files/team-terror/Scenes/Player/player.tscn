@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=3 uid="uid://do73ciyy4senj"]
+
+[ext_resource type="AudioStream" uid="uid://tkgqyjo6rrr2" path="res://Assets/all sfx/Player_SFX/walk.mp3" id="1_lgmok"]
+[ext_resource type="Script" path="res://Scenes/Player/Scripts for Player/player_movement.gd" id="1_n3sex"]
+[ext_resource type="AudioStream" uid="uid://cm8fbo34x2p86" path="res://Assets/all sfx/Player_SFX/run.mp3" id="2_iwfo3"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_swd4v"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_syjgj"]
+radius = 1.99697
+height = 14.408
+
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("Walk")]
+process_mode = 3
+script = ExtResource("1_n3sex")
+Walk = NodePath("Run")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.110713, 0)
+visible = false
+mesh = SubResource("CylinderMesh_swd4v")
+skeleton = NodePath("../..")
+
+[node name="Neck" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.804477, -0.0661726)
+
+[node name="Camera3D" type="Camera3D" parent="Neck"]
+current = true
+fov = 50.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0.370133, 0)
+shape = SubResource("CapsuleShape3D_syjgj")
+
+[node name="Hand" type="Node3D" parent="."]
+
+[node name="Flashlight" type="SpotLight3D" parent="Hand"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.929642, 0)
+light_color = Color(0.973063, 0.99249, 0.826257, 1)
+light_energy = 3.586
+light_volumetric_fog_energy = 3.0
+light_size = 3.18
+light_specular = 2.195
+distance_fade_length = 18.65
+spot_range = 10.0
+spot_attenuation = 2.0
+spot_angle = 35.0
+
+[node name="Flashlight_Battery" type="Timer" parent="Hand/Flashlight"]
+wait_time = 30.0
+
+[node name="Walk" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_lgmok")
+
+[node name="Run" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_iwfo3")

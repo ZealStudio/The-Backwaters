@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cm8fbo34x2p86"
+path="res://.godot/imported/run.mp3-9bd38f19f6f299f8b56e4027940f8b06.mp3str"
+
+[deps]
+
+source_file="res://Assets/all sfx/Player_SFX/run.mp3"
+dest_files=["res://.godot/imported/run.mp3-9bd38f19f6f299f8b56e4027940f8b06.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,224 @@
+{
+  "main": {
+    "id": "02563bccc98ade82",
+    "type": "split",
+    "children": [
+      {
+        "id": "9b0b1ea072b5c011",
+        "type": "tabs",
+        "dimension": 59.192037470726,
+        "children": [
+          {
+            "id": "4ede9c6a0d2f01e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ref/Visual Style.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Visual Style"
+            }
+          }
+        ]
+      },
+      {
+        "id": "840bdb60effc61c2",
+        "type": "tabs",
+        "dimension": 40.80796252927401,
+        "children": [
+          {
+            "id": "9cb4e262c4437978",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "graph",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d4fbed08724d61da",
+    "type": "split",
+    "children": [
+      {
+        "id": "e88b59716b28c50a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b09b8fa7616e6ad9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "4b7e5c02ddd23eb3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "428c45fbf16d09bb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6fe25d19f2e942a7",
+    "type": "split",
+    "children": [
+      {
+        "id": "93b6338f4666d5b5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f7d34579be0cccfe",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Ref/Visual Style.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Visual Style"
+            }
+          },
+          {
+            "id": "dbe06c0b25ba079c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Ref/Visual Style.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Visual Style"
+            }
+          },
+          {
+            "id": "ba3bc215471417d8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "95f6f5dc541a91e8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Ref/Visual Style.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Visual Style"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 507.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "smart-second-brain:Open S2B Chat": false
+    }
+  },
+  "active": "4ede9c6a0d2f01e4",
+  "lastOpenFiles": [
+    "Game Docs/Game Doc.md",
+    "Library.md",
+    "Story/Library.md",
+    "Ref/Wolf Creek Map Ver 1.png",
+    "Game Docs/Map.md",
+    "Cult ranks.canvas",
+    "Untitled.canvas",
+    "Story/Story.md",
+    "Characters.md",
+    "Game Docs/Puzzle-Solving.md",
+    "Chats/New Chat.md",
+    "The Disguised Object.md",
+    "Chats",
+    "Game Docs/Combat.md",
+    "Game Docs/Soundtrack.md",
+    "Game Docs/Gameplay Mechanics.md",
+    "Story/Grist Mill.md",
+    "Story/Moe's Hotel.md",
+    "Story",
+    "Ref/Pasted image 20241017194853.png",
+    "Ref",
+    "Ref/Visual Style.md",
+    "Untitled 1.canvas",
+    "Ref/Pasted image 20241017194921.png",
+    "Ref/Pasted image 20241017194918.png",
+    "Ref/Pasted image 20241017194915.png",
+    "Ref/Pasted image 20241017194910.png",
+    "Ref/Pasted image 20241017194906.png",
+    "Ref/Pasted image 20241017194903.png",
+    "Ref/Pasted image 20241017194900.png",
+    "Ref/Pasted image 20241017194857.png",
+    "Exploration.md",
+    "Game Docs",
+    "Untitled.md",
+    "Welcome.md"
+  ]
+}

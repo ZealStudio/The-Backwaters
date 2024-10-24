@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bykan1uxa6dub"]
+
+[ext_resource type="PackedScene" uid="uid://c2e57ev36niju" path="res://Assets/items/Key.glb" id="1_siykp"]
+[ext_resource type="Script" path="res://Scenes/items/self_destruct.gd" id="2_kthf0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qg2rd"]
+size = Vector3(5.99365, 2.06195, 1)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Key" parent="." instance=ExtResource("1_siykp")]
+
+[node name="KeyArea" type="StaticBody3D" parent="Key" node_paths=PackedStringArray("body") groups=["key1"]]
+script = ExtResource("2_kthf0")
+body = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Key/KeyArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.05981, 0.0919495, 0)
+shape = SubResource("BoxShape3D_qg2rd")

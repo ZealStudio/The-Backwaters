@@ -1,0 +1,109 @@
+[gd_scene load_steps=12 format=3 uid="uid://blmyed4is3vev"]
+
+[ext_resource type="Script" path="res://Scenes/Player/Test World/left_side_hinge_door.gd" id="1_648im"]
+[ext_resource type="Script" path="res://Scenes/Player/Test World/door_rotation.gd" id="1_l6rko"]
+[ext_resource type="Script" path="res://Scenes/Player/Test World/right_side_hinge.gd" id="2_dhppi"]
+
+[sub_resource type="Animation" id="Animation_brn1l"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_408el"]
+resource_name = "left_hinge"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 1.5708, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ckmgu"]
+resource_name = "right_hinge"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, -1.5708, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xokdn"]
+_data = {
+"RESET": SubResource("Animation_brn1l"),
+"left_hinge": SubResource("Animation_408el"),
+"right_hinge": SubResource("Animation_ckmgu")
+}
+
+[sub_resource type="SphereMesh" id="SphereMesh_pogrc"]
+radius = 0.1
+height = 0.1
+
+[sub_resource type="BoxMesh" id="BoxMesh_fbb86"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qni0g"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5lyvc"]
+size = Vector3(1, 1, 0.94191)
+
+[node name="TestDoorForopening" type="Node3D" node_paths=PackedStringArray("left_hinge", "right_hinge", "opens")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00171, 0)
+script = ExtResource("1_l6rko")
+left_hinge = NodePath("MeshInstance3D3/MeshInstance3D/MeshInstance3D2/LeftSideHinge")
+right_hinge = NodePath("MeshInstance3D3/MeshInstance3D/MeshInstance3D2/RightSideHinge")
+opens = NodePath("AnimationPlayer")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_xokdn")
+}
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.1, 0, 0, 0, 2, 0, 0, 0, 1, -0.1986, 0, -0.211485)
+mesh = SubResource("SphereMesh_pogrc")
+skeleton = NodePath("MeshInstance3D/MeshInstance3D2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.986, 0, -0.289431)
+mesh = SubResource("BoxMesh_fbb86")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="MeshInstance3D3/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.781006, 0, -0.341545)
+mesh = SubResource("SphereMesh_pogrc")
+
+[node name="LeftSideHinge" type="StaticBody3D" parent="MeshInstance3D3/MeshInstance3D/MeshInstance3D2" groups=["left_side_hinge"]]
+script = ExtResource("1_648im")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D3/MeshInstance3D/MeshInstance3D2/LeftSideHinge"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.34454)
+shape = SubResource("BoxShape3D_qni0g")
+
+[node name="RightSideHinge" type="StaticBody3D" parent="MeshInstance3D3/MeshInstance3D/MeshInstance3D2" groups=["right_side_hinge"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5881, 0, 0)
+script = ExtResource("2_dhppi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D3/MeshInstance3D/MeshInstance3D2/RightSideHinge"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.361267)
+shape = SubResource("BoxShape3D_5lyvc")

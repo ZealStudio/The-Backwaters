@@ -1,0 +1,77 @@
+[gd_scene load_steps=6 format=3 uid="uid://pir7fuqoy1o5"]
+
+[ext_resource type="Script" path="res://Scenes/Pause menu/resume.gd" id="1_c7pws"]
+[ext_resource type="Script" path="res://Scenes/Pause menu/pause_menu.gd" id="1_nrhku"]
+[ext_resource type="Script" path="res://Scenes/Pause menu/quit.gd" id="1_oldyb"]
+[ext_resource type="Script" path="res://Scenes/Pause menu/options.gd" id="2_whg6m"]
+[ext_resource type="PackedScene" uid="uid://hmx6o472ropw" path="res://addons/maaacks_menus_template/base/scenes/menus/options_menu/master_options_menu_with_tabs.tscn" id="3_365e7"]
+
+[node name="PauseMenu" type="Control" node_paths=PackedStringArray("menu", "options")]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nrhku")
+menu = NodePath("PauseOptions")
+options = NodePath("MasterOptionsMenu")
+
+[node name="MasterOptionsMenu" parent="." instance=ExtResource("3_365e7")]
+layout_mode = 2
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 161.0
+offset_top = -3.0
+offset_right = 997.0
+offset_bottom = 639.0
+
+[node name="PauseOptions" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PanelContainer" type="PanelContainer" parent="PauseOptions"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 448.0
+offset_top = 135.0
+offset_right = 674.0
+offset_bottom = 470.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseOptions/PanelContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Resume" type="Button" parent="PauseOptions/PanelContainer/VBoxContainer" node_paths=PackedStringArray("PauseMenu")]
+layout_mode = 2
+text = "Resume"
+script = ExtResource("1_c7pws")
+PauseMenu = NodePath("../../../..")
+
+[node name="Options" type="Button" parent="PauseOptions/PanelContainer/VBoxContainer" node_paths=PackedStringArray("MasterOptions", "PauseMenu")]
+layout_mode = 2
+size_flags_vertical = 4
+text = "Options"
+script = ExtResource("2_whg6m")
+MasterOptions = NodePath("../../../../MasterOptionsMenu")
+PauseMenu = NodePath("../../..")
+
+[node name="Quit" type="Button" parent="PauseOptions/PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "Quit"
+script = ExtResource("1_oldyb")
+
+[connection signal="pressed" from="PauseOptions/PanelContainer/VBoxContainer/Resume" to="PauseOptions/PanelContainer/VBoxContainer/Resume" method="_on_pressed"]
+[connection signal="pressed" from="PauseOptions/PanelContainer/VBoxContainer/Options" to="PauseOptions/PanelContainer/VBoxContainer/Options" method="_on_pressed"]
+[connection signal="pressed" from="PauseOptions/PanelContainer/VBoxContainer/Quit" to="PauseOptions/PanelContainer/VBoxContainer/Quit" method="_on_pressed"]

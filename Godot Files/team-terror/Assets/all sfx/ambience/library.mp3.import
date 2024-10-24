@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dcpe2ls1dn1py"
+path="res://.godot/imported/library.mp3-49e7de6b1b9aa7df795355f2a9643d2e.mp3str"
+
+[deps]
+
+source_file="res://Assets/all sfx/ambience/library.mp3"
+dest_files=["res://.godot/imported/library.mp3-49e7de6b1b9aa7df795355f2a9643d2e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

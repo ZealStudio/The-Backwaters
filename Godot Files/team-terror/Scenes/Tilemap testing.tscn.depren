@@ -1,0 +1,4 @@
+[gd_scene load_steps=9 format=3 uid="uid://b50218grqmdee"]
+
+[ext_resource type="Script" path="res://Scenes/music for test.gd" id="1_07hk0"]
+[ext_resource type="MeshLibrary" uid="uid://kx2vuje4x2w7" path="res://Resources/MotelTileSet/MotelTileset.tres" id="1_o47k0"]

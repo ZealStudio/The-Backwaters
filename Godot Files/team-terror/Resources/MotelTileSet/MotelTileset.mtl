@@ -1,0 +1,372 @@
+# Blender 4.2.3 LTS MTL File: 'MotelTileset.blend'
+# www.blender.org
+
+newmtl Alt_Wall
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Two.png
+
+newmtl Alt_Wall.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Four.png
+
+newmtl Alt_Wall.002
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Three.png
+
+newmtl Alt_Wall.003
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Two.png
+
+newmtl Alt_Wall.004
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Three.png
+
+newmtl Alt_Wall.005
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Two.png
+
+newmtl Alt_Wall.006
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Four.png
+
+newmtl Alt_Wall.009
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Three.png
+
+newmtl Alt_Wall.010
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Four.png
+
+newmtl Floor
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Two.png
+
+newmtl Floor.002
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Two.png
+
+newmtl Floor.003
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Two.png
+
+newmtl Floor.004
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Two.png
+
+newmtl Floor.006
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Three.png
+
+newmtl Floor.007
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Two.png
+
+newmtl Floor.008
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Two.png
+
+newmtl Floor.009
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Two.png
+
+newmtl Floor.010
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Two.png
+
+newmtl Floor.011
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Two.png
+
+newmtl Floor.012
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Four.png
+
+newmtl Floor.013
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Four.png
+
+newmtl Floor.014
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Four.png
+
+newmtl Floor.015
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Three.png
+
+newmtl Floor.016
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Three.png
+
+newmtl Floor.017
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Two.png
+
+newmtl Floor.018
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Boop/Desktop/Team-Terror-oct-2024/Godot Files/team-terror/Assets/MotelTileset/MotelTileset_Two.png
+
+newmtl ForeArm
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl HeadMaterial
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Hip
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Material
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Neck
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Shoe
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Sholder
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Thigh
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl TorsoTop
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl TrosoMid
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Window
+Ns 1000.000000
+Ka 0.300000 0.300000 0.300000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 0.200000
+illum 6

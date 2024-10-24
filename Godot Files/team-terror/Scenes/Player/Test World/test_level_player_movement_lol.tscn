@@ -1,0 +1,139 @@
+[gd_scene load_steps=22 format=3 uid="uid://bgiay576fyrov"]
+
+[ext_resource type="PackedScene" uid="uid://do73ciyy4senj" path="res://Scenes/Player/player.tscn" id="1_2usqi"]
+[ext_resource type="Script" path="res://Scenes/Player/Test World/test_level_player_movement_lol.gd" id="1_tgoim"]
+[ext_resource type="PackedScene" uid="uid://mem4nbmikwfm" path="res://Transitions/door_transition.tscn" id="4_gcdxx"]
+[ext_resource type="AudioStream" uid="uid://c6bi1houv2e6x" path="res://Assets/all sfx/ambience/tick tock.mp3" id="4_qxjj1"]
+[ext_resource type="PackedScene" uid="uid://cmus8sya0goou" path="res://Scenes/Player/Test World/harmblock.tscn" id="6_cypbn"]
+[ext_resource type="PackedScene" uid="uid://blmyed4is3vev" path="res://Scenes/Player/Test World/test_door_for_opening.tscn" id="7_gnank"]
+[ext_resource type="Script" path="res://Scenes/Player/Test World/testcast.gd" id="7_uwp48"]
+[ext_resource type="PackedScene" uid="uid://bykan1uxa6dub" path="res://Scenes/items/key.tscn" id="8_mm6bu"]
+[ext_resource type="PackedScene" uid="uid://imvfbkdp7kfr" path="res://Scenes/Player/Test World/test_closed_door_for_opening.tscn" id="9_u5aca"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_phl1p"]
+sky_top_color = Color(0.727955, 0.734064, 0.739278, 1)
+sky_horizon_color = Color(0.731989, 0.725766, 0.718069, 1)
+ground_horizon_color = Color(0.731989, 0.725766, 0.718069, 1)
+
+[sub_resource type="Sky" id="Sky_u0jlq"]
+sky_material = SubResource("ProceduralSkyMaterial_phl1p")
+
+[sub_resource type="Environment" id="Environment_c75y1"]
+background_mode = 2
+background_color = Color(0.408329, 0.408329, 0.408329, 1)
+sky = SubResource("Sky_u0jlq")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8ktkr"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_h0nvv"]
+material = SubResource("ShaderMaterial_8ktkr")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_4347o"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_t2x35"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_3qctp"]
+material = SubResource("ShaderMaterial_t2x35")
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_q02m4"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_tbdlh"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_qoakb"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4o7d3"]
+
+[node name="Node3D" type="Node3D" node_paths=PackedStringArray("BackgroundTest")]
+script = ExtResource("1_tgoim")
+BackgroundTest = NodePath("TickTock")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_c75y1")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.871214, 0.490904, 2.14581e-08, 0, -4.37114e-08, 1, 0.490904, 0.871214, 3.8082e-08, 0, 7.18207, 0)
+light_energy = 0.0
+light_indirect_energy = 0.0
+light_volumetric_fog_energy = 2.74
+shadow_enabled = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+mesh = SubResource("PlaneMesh_h0nvv")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_4347o")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(4.99823, 0.132267, -0.0128617, -0.131905, 4.9967, 0.124948, 0.0161585, -0.124564, 4.99842, -2.94786, 0.14279, -8.42352)
+mesh = SubResource("PlaneMesh_h0nvv")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D3/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_4347o")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.39671, -4.97627, -0.281635, -4.98419, 0.397341, 2.81405e-09, 0.022381, 0.280744, -4.99206, 7.10491, 5.8656, 0)
+mesh = SubResource("PlaneMesh_3qctp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D4/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_4347o")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.74433, 1.33228, 6.96859)
+mesh = SubResource("CylinderMesh_q02m4")
+
+[node name="TickTock" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_qxjj1")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
+transform = Transform3D(25, 0, 0, 0, 25, 0, 0, 0, 25, 0, 0, -36.0293)
+mesh = SubResource("PlaneMesh_tbdlh")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D5/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qoakb")
+
+[node name="Node3D" parent="." instance=ExtResource("4_gcdxx")]
+transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, -4.26189, 0, -0.608654)
+
+[node name="Player" parent="." instance=ExtResource("1_2usqi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.80584, 0)
+
+[node name="Node3D2" parent="." instance=ExtResource("6_cypbn")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -28.1667, 4.92452, -51.7774)
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.21599, 4.34093, -33.3734)
+mesh = SubResource("BoxMesh_4o7d3")
+skeleton = NodePath("RayCast3D")
+
+[node name="RayCast3D" type="RayCast3D" parent="MeshInstance3D6"]
+target_position = Vector3(1, -1, 1)
+debug_shape_custom_color = Color(0, 0.576471, 0, 1)
+script = ExtResource("7_uwp48")
+
+[node name="TestDoorForopening" parent="." instance=ExtResource("7_gnank")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.154344, 1.57109, -16.3188)
+
+[node name="TestDoorForopening2" parent="." instance=ExtResource("7_gnank")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.154344, 1.57109, -18.0397)
+
+[node name="TestDoorForopening3" parent="." instance=ExtResource("7_gnank")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.154344, 1.57109, -19.7593)
+
+[node name="Node3D3" parent="." instance=ExtResource("8_mm6bu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.95078, 3.76598, -17.8565)
+
+[node name="TestDoorForopeningLocked" parent="." instance=ExtResource("9_u5aca")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.9366, 1.00171, -22.5021)
