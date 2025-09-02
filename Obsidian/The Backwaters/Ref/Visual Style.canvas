@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"18786d709164d5b1","type":"file","file":"Ref/img/Pasted image 20241017194853.png","x":-510,"y":-415,"width":400,"height":224},
+		{"id":"2096108fcef8e2f4","type":"file","file":"Ref/img/Pasted image 20241017194857.png","x":-510,"y":-160,"width":400,"height":225},
+		{"id":"5ea350f73a32e8f2","type":"file","file":"Ref/img/Pasted image 20241017194900.png","x":-80,"y":-415,"width":400,"height":200},
+		{"id":"bac4438e540d6567","type":"file","file":"Ref/img/Pasted image 20241017194903.png","x":-80,"y":-160,"width":400,"height":225},
+		{"id":"3ba2360f0ccaf40a","type":"file","file":"Ref/img/Pasted image 20241017194906.png","x":-510,"y":100,"width":400,"height":267},
+		{"id":"9d6864ceea9e03fa","type":"file","file":"Ref/img/Pasted image 20241017194910.png","x":-80,"y":100,"width":399,"height":233},
+		{"id":"f8f9536e472d4da7","type":"file","file":"Ref/img/Pasted image 20241017194915.png","x":340,"y":-415,"width":399,"height":226},
+		{"id":"216e438123153d3c","type":"file","file":"Ref/img/Pasted image 20241017194918.png","x":340,"y":-160,"width":400,"height":225},
+		{"id":"fb445dd40a1cf3dc","type":"file","file":"Ref/img/Pasted image 20241017194921.png","x":340,"y":100,"width":400,"height":233},
+		{"id":"d88f5dbe08011ac7","type":"file","file":"Ref/img/Wolf Creek Map Ver 1.png","x":-510,"y":480,"width":400,"height":235},
+		{"id":"035165f319d2cebd","type":"text","text":"Color pallets\nApollo: https://lospec.com/palette-list/apollo\nGrim : https://lospec.com/palette-list/grim32\nAtropoeia: https://lospec.com/palette-list/atropoeia","x":0,"y":480,"width":456,"height":136}
+	],
+	"edges":[]
+}
